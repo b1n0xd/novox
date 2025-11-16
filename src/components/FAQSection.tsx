@@ -31,7 +31,7 @@ const FAQSection = () => {
             href="tel:+41227886595"
             className="font-bold text-blue-600"
           >
-            022 788 06 95
+            022 788 65 95
           </a>
           , par email à{" "}
           <a

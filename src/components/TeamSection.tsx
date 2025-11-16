@@ -2,6 +2,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
+import miguelImg from "@/assets/miguel.png";
+import marcusImg from "@/assets/marcus.png";
+import charleneImg from "@/assets/charlene.png";
 
 const TeamSection = () => {
   const team = [
@@ -9,16 +12,8 @@ const TeamSection = () => {
       name: "Miguel DUARTE",
       role: "Infirmier",
 avatar: "MD",
-      image: "/src/assets/miguel.png",
-      fullDescription: `Miguel Duarte, infirmier passionné, a eu l'opportunité d'exercer dans de nombreux services, notamment la maternité, la médecine générale, la pédiatrie, la chirurgie, la gériatrie, la psycho-gériatrie, la santé publique ainsi que les soins à domicile.
-
-Cette diversité d'expériences lui a permis de développer des compétences solides, mais surtout une approche profondément humaine du soin.
-
-Au fil des années, une conviction s'est imposée au cœur de sa pratique : prendre soin avant tout. Être à l'écoute, accompagner avec bienveillance, rassurer et instaurer une relation de confiance sont, pour lui, aussi essentiels que les actes techniques.
-
-Chaque patient, chaque parcours, chaque rencontre donne du sens à son métier et nourrit sa motivation au quotidien.
-
-C'est avec engagement, empathie et professionnalisme qu'il poursuit sa mission : offrir des soins attentionnés, adaptés et respectueux de chacun.`,
+      image: miguelImg,
+      fullDescription: "Infirmier passionné, j’ai eu la chance d’exercer dans de nombreux services : la maternité, la médecine générale, la pédiatrie, la chirurgie, la gériatrie, la psycho-gériatrie, la santé publique ainsi que les soins à domicile. Cette diversité d’expériences m’a permis de développer des compétences solides, mais surtout une approche profondément humaine du soin.Au fil des années, une conviction s’est imposée au centre de ma pratique : prendre soin avant tout. Être à l’écoute, accompagner avec bienveillance, rassurer et instaurer une relation de confiance sont, pour moi, tout aussi essentiels que les gestes techniques. Chaque patient, chaque parcours, chaque rencontre donne du sens à mon métier et nourrit ma motivation jour après jour.C’est avec engagement, empathie et professionnalisme que je poursuis ma mission : offrir des soins attentionnés, adaptés et respectueux de chacun.",
 specializations: [
         "Gériatrie",
         "Soins palliatifs",
@@ -36,7 +31,7 @@ specializations: [
       name: "Marcus CONCEICAO",
       role: "Infirmier",
 avatar: "MF",
-      image: "/src/assets/marcus.png",
+      image: marcusImg,
       fullDescription: "Je suis infirmier diplômé de la Haute École de Santé de Genève depuis 2015. Fort d’une expérience solide acquise aux Hôpitaux Universitaires de Genève en médecine interne et ses spécialités. Mon approche est centrée sur le patient et son entourage, avec un engagement profond pour des soins personnalisés, de qualité, empreints d’écoute, d’empathie et de respect.Je collabore étroitement avec les familles et les médecins afin d’assurer un accompagnement coordonné et adapté à chaque situation, du suivi post-opératoire aux soins palliatifs. Ma mission : offrir un soutien humain et professionnel à chaque étape du parcours de soin, pour le bien-être des patients et la sérénité de leurs proches.",
 specializations: [
         "Soins post-opératoires",
@@ -55,7 +50,7 @@ specializations: [
       name: "Charlène ALBIACH",
       role: "Infirmière",
       avatar: "CA",
-      image: "/src/assets/charlene.png",
+      image: charleneImg,
       fullDescription: "Infirmière passionnée, j’ai obtenu mon Bachelor en soins infirmiers à Paris, un diplôme reconnu par la Croix-Rouge suisse. Après deux années en réanimation à l’AP-HP, j’ai rejoint Genève en 2020 pour participer à la prise en charge des patients Covid-19 aux soins intensifs des HUG, où j’ai exercé plusieurs années.Ces expériences m’ont appris que la qualité des soins repose autant sur la maîtrise professionnelle que sur la bienveillance et l’écoute. Être présente, rassurante et attentive aux besoins de chacun est au cœur de ma pratique quotidienne. Aujourd’hui infirmière à domicile à Genève, j’ai à cœur d’offrir des soins personnalisés, respectueux et de qualité, tout en créant un lien de confiance avec chaque patient.",
 specializations: [
         "Médecine aiguë",
