@@ -36,14 +36,32 @@ const ContactSection = () => {
 
     try {
       // Preparar os parâmetros do template
+      // IMPORTANTE: Os nomes devem corresponder EXATAMENTE às variáveis no template do EmailJS
       const templateParams = {
+        // Enviando com AMBOS os formatos para garantir compatibilidade
+        name: formData.name,
         from_name: formData.name,
+
+        email: formData.email,
         from_email: formData.email,
+
+        phone: formData.phone,
         from_phone: formData.phone,
+
         subject: formData.subject || 'Nouveau message de contact',
+
         message: formData.message,
-        to_email: 'info@misad.ch', // Email de destino
+
+        to_email: 'info@misad.ch',
       };
+
+      // Log dos parâmetros sendo enviados (para debug)
+      console.log('=== DEBUG EmailJS ===');
+      console.log('Service ID:', EMAILJS_CONFIG.SERVICE_ID);
+      console.log('Template ID:', EMAILJS_CONFIG.TEMPLATE_ID);
+      console.log('Public Key:', EMAILJS_CONFIG.PUBLIC_KEY);
+      console.log('Template Params:', templateParams);
+      console.log('====================');
 
       // Enviar email via EmailJS
       const response = await emailjs.send(
@@ -52,6 +70,8 @@ const ContactSection = () => {
         templateParams,
         EMAILJS_CONFIG.PUBLIC_KEY
       );
+
+      console.log('EmailJS Response:', response);
 
       if (response.status === 200) {
         toast({
